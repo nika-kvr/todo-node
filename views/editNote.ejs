@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Edit Note</title>
+</head>
+<body>
+  <main>
+    <h1>Edit Note</h1>
+    <a href="/">
+      <img class="back--btn" width="35" src="https://img.icons8.com/ios/50/back--v1.png" alt="back"/>
+    </a>
+    <div class="form--card">
+      <form class="form" action="/edit-post-note" method="POST">
+        <input type="text" name="description" value="<%= editNote.description  %>">
+        <input required type="hidden" name="noteId" value="<%= editNote.id %>">
+        <button class="btn add--btn" type="submit">SAVE</button>
+      </form>
+    </div>
+
+  </main>
+</body>
+</html>
